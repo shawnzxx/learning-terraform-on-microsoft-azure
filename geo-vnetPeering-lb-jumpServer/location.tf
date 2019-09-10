@@ -8,8 +8,9 @@ variable "web_server_count" {}
 variable "web_server_subnets" {
     type = "list"
 }
-variable "terraform_script_version" {}
 variable "domain_name_label" {}
+variable "terraform_script_version" {}
+
 
 # local value
 locals {
