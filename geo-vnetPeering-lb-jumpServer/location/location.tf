@@ -131,7 +131,7 @@ resource "azurerm_virtual_machine_scale_set" "web_server" {
 
     settings = <<SETTINGS
     {
-      "fileUris": ["https://raw.githubusercontent.com/shawnzxx/learning-terraform-on-microsoft-azure/master/azureInstallWebServer.ps1"],
+      "fileUris": ["https://raw.githubusercontent.com/shawnzxx/learning-terraform-on-microsoft-azure/master/geo-vnetPeering-lb-jumpServer/location/azureInstallWebServer.ps1"],
       "commandToExecute": "start powershell -ExecutionPolicy Unrestricted -File azureInstallWebServer.ps1"
     }
     SETTINGS
