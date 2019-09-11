@@ -26,7 +26,7 @@ provider "azurerm" {
 }
 
 module "location_us2w" {
-  source = "./geo-vnetPeering-lb-jumpServer"
+  source = "./location"
 
   web_server_location      = "westus2"
   web_server_rg            = "${var.web_server_rg}-us2w"
@@ -41,7 +41,7 @@ module "location_us2w" {
 }
 
 module "location_asia" {
-  source = "./geo-vnetPeering-lb-jumpServer"
+  source = "./location"
 
   web_server_location      = "southeastasia"
   web_server_rg            = "${var.web_server_rg}-asia"
